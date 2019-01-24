@@ -1,0 +1,55 @@
+{
+  "name": "easy-ftp-deploy",
+  "version": "0.0.3",
+  "description": "Easy FTP deploy CLI tool",
+  "author": "Jonas Gnioui <btxtiger@outlook.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "bin": {
+    "easy-ftp-deploy": "./lib/index.js"
+  },
+  "scripts": {
+    "start": "node lib/index.js",
+    "test": "test",
+    "format-prettier": "prettier --write \"./src/**/*.ts\"",
+    "build": "npm run format-prettier && tsc",
+    "pub": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btxtiger/ftpdeploy.git"
+  },
+  "keywords": [
+    "ftp",
+    "deploy",
+    "cli",
+    "tool"
+  ],
+  "bugs": {
+    "url": "https://github.com/btxtiger/ftpdeploy/issues"
+  },
+  "homepage": "https://github.com/btxtiger/ftpdeploy#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "clui": "^0.3.6",
+    "figlet": "^1.2.1",
+    "inquirer": "^6.2.1",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.1",
+    "@types/chalk": "^2.2.0",
+    "@types/figlet": "^1.2.0",
+    "@types/minimist": "^1.2.0",
+    "@types/node": "^10.12.18",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.4"
+  },
+  "files": [
+    "lib",
+    "src",
+    "LICENSE",
+    "README.md"
+  ]
+}
